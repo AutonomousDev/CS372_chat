@@ -8,10 +8,14 @@ def client():
         s.connect((HOST, PORT))
 
         while True:
-            data = input()
+            prompt = username + ": "
+            data = input(prompt)
+            data = username + ": " + data
             data = bytes(data, 'utf-8')
             s.sendall(data)
             data = s.recv(1024)
-            print(f"Received {data!r}")
+            data = data.decode("utf-8")
+            print(data)
+
 
 client()
