@@ -1,4 +1,12 @@
-pip install pynput
+This program is a client-server program pair for sending chat messages back and forth. The server opens a socket and waits for the client to connect then. On the client the server IP address is hard coded as 127.0.0.1 for the sake of demos.
+
+This project was more about network sockets so the chat is pretty rudamenty.
+
+Run `pip install pynput`
+
+In one command prompt window run `python server.py`
+
+In another command prompt window run `python client.py`
 
 
 Cited sources: 
